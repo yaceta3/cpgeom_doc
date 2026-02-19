@@ -13,6 +13,4 @@ Découvrir l'environnement github
             - un dossier **docs/**
                 - un fichier index.md
                     - tous les fichiers Markdown nécessaire (qui seront autant de pages de mon site) 
-                    
-## Et si tu veux du sérieux mon bb
-! [Ca se passe ici] (https://www.ign.fr/institut)
+        
