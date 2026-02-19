@@ -2,7 +2,7 @@
 ![alt text](img/welcome.jpg)
 
 ## The sources
-! [alt text](https://www.ign.fr/institut)
+! [ign docs](https://www.ign.fr/institut)
 
 ## Here we talk about everything about geomatic
 
