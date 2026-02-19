@@ -1,22 +1,12 @@
-# Accueil de mon site de documentation
+# Home of my documentation site
+![alt text](img/welcome.jpg)
 
-## Les sources
-![Couwcouw les gars](img/couwcouw.jpg)
+## The sources
+! [alt text](https://www.ign.fr/institut)
 
-## Et si tu veux du sérieux mon gars
-! [Ca se passe ici](https://www.ign.fr/institut)
+## Here we talk about everything about geomatic
 
-## Alors soyons sérieux un peu mes bb luxes
-    - Alors là je vais vous montrer le vrai visage des deux personnes qui me servent d'amis
-        - Vous savez de qui je parle bien évidemment
-            - Alors leur nom est : Cloe et Nathan
-
-## Leur vrai visage est là
-
-![Couwcouw les gars](img/sisi.jpg)
-
-## Alors le visage de Cloe est là
-![Cloe face](img/cloe.jpg)
-
-## Et celui de Nathan
-![Nathan face](img/nathan.jpg)
+To begin with, do you know what “geomatics” is?
+The term “geomatics” was proposed in the late 1960s by the French scientist Bernard Dubuisson.
+And sources are very important in this field.
+So, as you know, we are going to talk about data sources.
