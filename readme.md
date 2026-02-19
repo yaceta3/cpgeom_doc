@@ -13,4 +13,4 @@ Découvrir l'environnement github
             - un dossier **docs/**
                 - un fichier index.md
                     - tous les fichiers Markdown nécessaire (qui seront autant de pages de mon site) 
-                    mon bb
+                    
