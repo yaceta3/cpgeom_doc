@@ -1,196 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Interopérabilité des données</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
-    </head>
-
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">Interopérabilité des données</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Site de documentation</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="description_wms/" class="nav-link">Description wms</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="interoperabilite/" class="nav-link">Interopérabilité - Web Services</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Img <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="img/" class="dropdown-item">Accueil de mon site de documentation</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="description_wms/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Les sources de données de la DDT 65</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#site-de-documentation" class="nav-link">Site de documentation</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#sommaire" class="nav-link">Sommaire</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#definition" class="nav-link">Définition</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#sources-internes" class="nav-link">Sources internes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#sources-externes" class="nav-link">Sources externes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#interoperabilite-web-services" class="nav-link">Interopérabilité - Web Services</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#1-contexte-general-interoperabilite-fair" class="nav-link">1. Contexte général : interopérabilité = FAIR</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#2-web-services-ogc" class="nav-link">2. Web Services OGC</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#3-formats-et-standards-associes" class="nav-link">3. Formats et standards associés</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#4-evolution-des-normes" class="nav-link">4. Évolution des normes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#5-examen-des-webservices-avec-qgis" class="nav-link">5. Examen des webservices avec QGIS</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#a-exemple-pratique" class="nav-link">a. Exemple pratique</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#b-avantages-fondamentaux-des-web-services" class="nav-link">b. Avantages fondamentaux des Web Services</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#6-catalogage-et-metadonnees-principes-cles" class="nav-link">6 . Catalogage et Métadonnées : Principes Clés</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#objectif" class="nav-link">Objectif</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#a-caracteristiques-des-donnees-de-qualite" class="nav-link">a. Caractéristiques des données de qualité.</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#b-documentation-et-standards" class="nav-link">b. Documentation et standards</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#c-diffusion-et-accessibilite" class="nav-link">c. Diffusion et accessibilité</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#d-reutilisabilite" class="nav-link">d. Réutilisabilité</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#7-etl-spatial-synthese" class="nav-link">7. ETL Spatial – Synthèse</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#a-definition-generale" class="nav-link">a. Définition générale</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#b-etapes-cles" class="nav-link">b. Étapes clés</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#c-fonctions-principales-de-letl-spatial" class="nav-link">c. Fonctions principales de l’ETL spatial</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#d-transformations-geospatiales-courantes" class="nav-link">d. Transformations géospatiales courantes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#e-exemple-dapplication" class="nav-link">e. Exemple d’application</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Accueil";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
 
-<h1 id="site-de-documentation">Site de documentation</h1>
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Les sources de données de la DDT 65
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Accueil</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#sommaire">Sommaire</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#definition">Définition</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sources-internes">Sources internes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#referentiel-parcellaire-interne">Référentiel parcellaire interne</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#referentiel-bd-topo">Référentiel BD TOPO</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#geoplateforme">Géoplateforme</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sources-externes">Sources externes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#insee">INSEE</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#urbansimul">Urbansimul</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#openstreetmap-osm">OpenStreetMap (OSM)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="interoperabilite/index.md">Interopérabilité</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Les sources de données de la DDT 65</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Accueil</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="site-de-documentation">Site de documentation</h1>
 <p><img alt="Bienvenue" src="img/welcome.jpg" /></p>
 <hr />
 <h2 id="sommaire">Sommaire</h2>
@@ -259,219 +165,48 @@ Elle peut être <strong>interne ou externe</strong>, <strong>structurée ou non 
 - <strong>Mise à jour</strong> : continue, contribution collaborative<br />
 - <strong>Licence / Usage</strong> : ODbL<br />
 - <strong>Exemple d’usage</strong> : cartographie libre, réseau routier, points d’intérêt.</p>
-<hr />
-<h1 id="interoperabilite-web-services">Interopérabilité - Web Services</h1>
-<p><img alt="inter" src="img/inter.png" /> </p>
-<h2 id="1-contexte-general-interoperabilite-fair">1. Contexte général : interopérabilité = FAIR</h2>
-<ul>
-<li>Objectif : rendre les données <strong>Findable, Accessible, Interoperable, Reusable</strong>.</li>
-<li>Approche clé pour diffuser des données géospatiales dans des systèmes hétérogènes.</li>
-</ul>
-<h2 id="2-web-services-ogc">2. Web Services OGC</h2>
-<p>Les principaux services :</p>
-<table>
-<thead>
-<tr>
-<th>Service</th>
-<th>Type de données</th>
-<th>Usage principal</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>WMS</strong> (Web Map Service)</td>
-<td>Image/cartes</td>
-<td>Produire et afficher des cartes via HTTP</td>
-</tr>
-<tr>
-<td><strong>WMTS</strong> (Web Map Tile Service)</td>
-<td>Image/cartes tuilées</td>
-<td>Affichage rapide et scalable</td>
-</tr>
-<tr>
-<td><strong>WFS</strong> (Web Feature Service)</td>
-<td>Vectoriel</td>
-<td>Accès aux données vectorielles (features)</td>
-</tr>
-<tr>
-<td><strong>WCS</strong> (Web Coverage Service)</td>
-<td>Raster/couvertures</td>
-<td>Accès aux données raster et valeurs attributaires</td>
-</tr>
-<tr>
-<td><strong>CS-W</strong> (Catalogue Service for the Web)</td>
-<td>Métadonnées</td>
-<td>Recherche et découverte de données géospatiales</td>
-</tr>
-<tr>
-<td><strong>WPS</strong> (Web Processing Service)</td>
-<td>Traitement géospatial</td>
-<td>Exposition de traitements comme buffer, overlay, etc.</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Ces services sont accessibles via <strong>HTTP/URL</strong>, compatibles avec des clients SIG tels que QGIS, ArcGIS ou OpenLayers.</li>
-</ul>
-<h2 id="3-formats-et-standards-associes">3. Formats et standards associés</h2>
-<ul>
-<li><strong>SLD</strong> : Styled Layer Descriptor (styles des couches)</li>
-<li><strong>GML</strong> : Geography Markup Language (modèle géométrique et attributaire)</li>
-<li><strong>KML</strong> : Keyhole Markup Language (visualisation type Google Earth)</li>
-<li><strong>GPKG</strong> : GeoPackage (conteneur de données géospatiales)</li>
-<li><strong>WKT CRS</strong> : Notation des systèmes de référence</li>
-</ul>
-<h2 id="4-evolution-des-normes">4. Évolution des normes</h2>
-<ul>
-<li>Les Web Services OGC classiques (WMS, WFS, WCS, etc.) restent des piliers.</li>
-<li>Tendances modernes : <strong>OGC API</strong> (REST/JSON), qui reprennent les mêmes concepts pour plus de légèreté et compatibilité web.</li>
-</ul>
-<h2 id="5-examen-des-webservices-avec-qgis">5. Examen des webservices avec QGIS</h2>
-<h2 id="a-exemple-pratique">a. Exemple pratique</h2>
-<ul>
-<li>Utilisation de QGIS pour observer un service WMTS.</li>
-<li>Accès à la capacité du service via un <strong>GetCapabilities</strong> en XML :  [getcapabilities]
-  (https://data.geopf.fr/wmts?SERVICE=WMTS&amp;VERSION=1.0.0&amp;REQUEST=GetCapabilities).</li>
-</ul>
-<h2 id="b-avantages-fondamentaux-des-web-services">b. Avantages fondamentaux des Web Services</h2>
-<ul>
-<li><strong>Mise à disposition globale et contrôlée</strong> des données spatiales.</li>
-<li><strong>Performance côté client</strong> grâce à un temps de chargement réduit.</li>
-<li><strong>Interopérabilité</strong> entre différents outils SIG.</li>
-</ul>
-<h2 id="6-catalogage-et-metadonnees-principes-cles">6 . Catalogage et Métadonnées : Principes Clés</h2>
-<h2 id="objectif">Objectif</h2>
-<p>Permettre le partage et la réutilisation de données fiables dans la discipline de la géomatique.</p>
-<h2 id="a-caracteristiques-des-donnees-de-qualite">a. Caractéristiques des données de qualité.</h2>
-<ul>
-<li><strong>Exhaustives</strong> : couverture complète des informations nécessaires.  </li>
-<li><strong>Propres</strong> : sans erreurs ou incohérences.  </li>
-<li><strong>Géométriquement correctes</strong> : respect des standards géospatiaux.  </li>
-</ul>
-<h2 id="b-documentation-et-standards">b. Documentation et standards</h2>
-<ul>
-<li>Fiches de métadonnées conformes aux normes <strong>ISO 19115 / 19139</strong>, <strong>INSPIRE</strong>, <strong>DCAT</strong>.  </li>
-</ul>
-<h2 id="c-diffusion-et-accessibilite">c. Diffusion et accessibilité</h2>
-<ul>
-<li>Catalogues de données et métadonnées.  </li>
-<li>Services web de catalogage (<strong>CSW</strong>).  </li>
-</ul>
-<h2 id="d-reutilisabilite">d. Réutilisabilité</h2>
-<ul>
-<li>Données accessibles et ouvertes pour exploitation ultérieure.</li>
-</ul>
-<h2 id="7-etl-spatial-synthese">7. ETL Spatial – Synthèse</h2>
-<h2 id="a-definition-generale">a. Définition générale</h2>
-<p>L’ETL (Extract, Transform, Load) spatial, ou GTL (« Geographic Transformation and Load »), applique les principes classiques d’ETL aux données géographiques.</p>
-<h2 id="b-etapes-cles">b. Étapes clés</h2>
-<ul>
-<li><strong>Extract (Extraction)</strong> : Convertir les données dans un format adapté à la transformation.  </li>
-<li><strong>Transform (Transformation)</strong> :  </li>
-<li>Nettoyage, filtrage, enrichissement  </li>
-<li>Division (splitting) et regroupement  </li>
-<li>Restructuration des données pour le modèle cible (structure, attributs, géométrie)  </li>
-<li><strong>Load (Chargement)</strong> : Intégrer les données transformées dans la base cible.  </li>
-</ul>
-<h2 id="c-fonctions-principales-de-letl-spatial">c. Fonctions principales de l’ETL spatial</h2>
-<ul>
-<li>Synchronisation de bases de données géographiques  </li>
-<li>Conversion de formats (ex. OGR / GDAL)  </li>
-<li>Restructuration complète du modèle de données  </li>
-</ul>
-<h2 id="d-transformations-geospatiales-courantes">d. Transformations géospatiales courantes</h2>
-<ul>
-<li><strong>Reprojection</strong> : Changement de système de coordonnées  </li>
-<li><strong>Transformations spatiales</strong> : Calcul de relations et prédicats spatiaux  </li>
-<li><strong>Transformations topologiques</strong> : Création de relations topologiques entre jeux de données  </li>
-<li><strong>Re-symbolisation</strong> : Modification de l’apparence cartographique (couleur, style)  </li>
-<li><strong>Géocodage</strong> : Conversion d’attributs tabulaires en données spatiales  </li>
-</ul>
-<h2 id="e-exemple-dapplication">e. Exemple d’application</h2>
-<ul>
-<li>Calcul d’indicateurs NDVI, EVI et LAI via un processus ETL spatial</li>
-</ul></div>
+              
             </div>
-        </div>
+          </div><footer>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+  <hr/>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
         </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
 </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
 
-    </body>
+</body>
 </html>
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2026-02-20 15:20:27.127175+00:00
+Build Date UTC : 2026-02-20 15:32:23.454186+00:00
 -->
