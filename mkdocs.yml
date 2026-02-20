@@ -1,6 +1,6 @@
 site_name : Les sources de données de la DDT 65
 
-theme: readthebocks
+theme: readthedocs
 
 nav:
   - Accueil: index.md
