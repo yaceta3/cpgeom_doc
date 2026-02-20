@@ -1,15 +1,8 @@
-# Home of my documentation site
+# Site de docuementation
 ![alt text](img/welcome.jpg)
 
 ## General Theme
-! [ign docs](https://www.ign.fr/institut)
-
-## Here we talk about everything about geomatic
-
-To begin with, do you know what “geomatics” is?
-The term “geomatics” was proposed in the late 1960s by the French scientist Bernard Dubuisson.
-And sources are very important in this field.
-So, as you know, we are going to talk about data sources.
+! [source de données](https://supports.idgeo.fr/cpgeom/2025-2027/A2_Sources_donnees/co/THEOSIG_geoplateforme.html)
 
 ## 1. Définition
 Une source de données est l’origine d’une information exploitable dans un système d’information.
@@ -17,70 +10,24 @@ Elle peut être interne ou externe, structurée ou non structurée, statique ou 
 
 Objectif : garantir fiabilité, traçabilité, fraîcheur et exploitabilité.
 
-## 2.Typologie des sources de données
-A. Par origine
-1. Sources internes
-Produites par l’organisation :
-    - ERP, CRM
-    - Bases métiers
-    - Logs applicatifs
-    - Capteurs IoT internes
-    - Données RH / financières
+ # Les sources de données de la DDT 65
+ Dans la DDT 65 et principalement dans mes missions, j'utilise des référentiels et des sources de données. 
+ En ce qui concerne les référentiels, on a : 
 
-➡ Avantage : maîtrise et gouvernance plus simples   
-➡ Risque : silos, qualité hétérogène
+    - référentiel parcellaire interne
+    - référentiel géographique basé sur la BD TOPO
+    - Géoplateforme
+![alt text](img/geoplateforme.jpg)
 
-2. Sources externes
-Produites par des tiers :
-    - Données open data (ex. INSEE)
-    - Données géographiques (ex. OpenStreetMap)
-    - APIs privées (ex. Google)
-    - Fournisseurs spécialisés (météo, marchés, télédétection)   
+Et pour les sources externes :
 
-➡ Enjeu : contractualisation, licence, mise à jour
+    - Institutions statistiques (ex. INSEE)
+![alt text](img/insee.png)
 
-B. Par structure
-1. Données structurées
-    - Tables relationnelles (SQL)
-    - CSV
-    - Data Warehouse
+    - Urbansimul (données foncières)
+![alt text](img/urbansimul.png)
 
-Exploitation simple, requêtes optimisées.
+    - Données géospatiales (OSM)
+![alt text](img/osm.png)
 
-2. Données semi-structurées
-    - JSON
-    - XML
-    - Logs formatés
-
-Flexible, nécessite transformation.
-
-3. Données non structurées
-    - Images
-    - Vidéos
-    - PDF
-    - Texte libre
-
-Traitement via NLP, vision par ordinateur, etc.
-
-C. Par mode d’acquisition
-1. Saisie humaine
-    - Formulaires
-    - Enquêtes
-    - Applications métiers
-
-Risque d’erreurs → besoin de validation.
-
-2. Capteurs et instruments
-    - GPS
-    - Stations météo
-    - Satellites (ex. NASA)
-    - Drones
-
-Production massive, nécessite stockage adapté.
-
-3. Web scraping / APIs
-    - Extraction automatisée :
-    - APIs REST
-    - Connecteurs SaaS
-
-Attention aux conditions d’usage.
+ 
