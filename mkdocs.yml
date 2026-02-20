@@ -4,5 +4,5 @@ theme: readthedocs
 
 nav:
   - Accueil: index.md
-  - Interopérabilité: interoperabilite/index.md
+  - Interopérabilité: interoperabilite.md
 
