@@ -13,7 +13,6 @@
   - [INSEE](#insee)
   - [Urbansimul](#urbansimul)
   - [OpenStreetMap (OSM)](#osm)
-
 ---
 
 ## Définition
