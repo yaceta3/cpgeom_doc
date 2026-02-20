@@ -1,5 +1,8 @@
 site_name : Les sources de données de la DDT 65
 
-theme: interoperabilité
+theme: readthebocks
 
-site_name : Interopérabilité des données
+nav:
+  - Accueil: index.md
+  - Interopérabilité: interoperabilite/index.md
+
