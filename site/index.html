@@ -88,7 +88,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#the-differents-sources" class="nav-link">The differents sources</a>
+            <li class="nav-item" data-level="2"><a href="#1-definition" class="nav-link">1. Définition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2typologie-des-sources-de-donnees" class="nav-link">2.Typologie des sources de données</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -108,8 +112,82 @@
 The term “geomatics” was proposed in the late 1960s by the French scientist Bernard Dubuisson.
 And sources are very important in this field.
 So, as you know, we are going to talk about data sources.</p>
-<h2 id="the-differents-sources">The differents sources</h2>
-<p>The differents data sources in geomatic is : </p></div>
+<h2 id="1-definition">1. Définition</h2>
+<p>Une source de données est l’origine d’une information exploitable dans un système d’information.
+Elle peut être interne ou externe, structurée ou non structurée, statique ou temps réel.</p>
+<p>Objectif : garantir fiabilité, traçabilité, fraîcheur et exploitabilité.</p>
+<h2 id="2typologie-des-sources-de-donnees">2.Typologie des sources de données</h2>
+<p>A. Par origine
+1. Sources internes
+Produites par l’organisation :
+    - ERP, CRM
+    - Bases métiers
+    - Logs applicatifs
+    - Capteurs IoT internes
+    - Données RH / financières</p>
+<p>➡ Avantage : maîtrise et gouvernance plus simples <br />
+➡ Risque : silos, qualité hétérogène</p>
+<ol>
+<li>Sources externes
+Produites par des tiers :<ul>
+<li>Données open data (ex. INSEE)</li>
+<li>Données géographiques (ex. OpenStreetMap)</li>
+<li>APIs privées (ex. Google)</li>
+<li>Fournisseurs spécialisés (météo, marchés, télédétection)   </li>
+</ul>
+</li>
+</ol>
+<p>➡ Enjeu : contractualisation, licence, mise à jour</p>
+<p>B. Par structure
+1. Données structurées
+    - Tables relationnelles (SQL)
+    - CSV
+    - Data Warehouse</p>
+<p>Exploitation simple, requêtes optimisées.</p>
+<ol>
+<li>Données semi-structurées<ul>
+<li>JSON</li>
+<li>XML</li>
+<li>Logs formatés</li>
+</ul>
+</li>
+</ol>
+<p>Flexible, nécessite transformation.</p>
+<ol>
+<li>Données non structurées<ul>
+<li>Images</li>
+<li>Vidéos</li>
+<li>PDF</li>
+<li>Texte libre</li>
+</ul>
+</li>
+</ol>
+<p>Traitement via NLP, vision par ordinateur, etc.</p>
+<p>C. Par mode d’acquisition
+1. Saisie humaine
+    - Formulaires
+    - Enquêtes
+    - Applications métiers</p>
+<p>Risque d’erreurs → besoin de validation.</p>
+<ol>
+<li>Capteurs et instruments<ul>
+<li>GPS</li>
+<li>Stations météo</li>
+<li>Satellites (ex. NASA)</li>
+<li>Drones</li>
+</ul>
+</li>
+</ol>
+<p>Production massive, nécessite stockage adapté.</p>
+<ol>
+<li>Web scraping / APIs<ul>
+<li>Extraction automatisée :</li>
+<li>APIs REST</li>
+<li>Connecteurs SaaS</li>
+</ul>
+</li>
+</ol>
+<p>Attention aux conditions d’usage.</p></div>
             </div>
         </div>
 
@@ -192,5 +270,5 @@ So, as you know, we are going to talk about data sources.</p>
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2026-02-19 15:37:05.827227+00:00
+Build Date UTC : 2026-02-19 15:57:15.092755+00:00
 -->
