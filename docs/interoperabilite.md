@@ -5,6 +5,8 @@
 - Approche clé pour diffuser des données géospatiales dans des systèmes hétérogènes.
 
 ## 2. Web Services OGC
+![ocg](img/ocg.jpg)
+
 Les principaux services :
 
 | Service | Type de données | Usage principal |
@@ -26,6 +28,7 @@ Les principaux services :
 - **WKT CRS** : Notation des systèmes de référence
 
 ## 4. Évolution des normes
+![alt text](img/norme.png)
 - Les Web Services OGC classiques (WMS, WFS, WCS, etc.) restent des piliers.
 - Tendances modernes : **OGC API** (REST/JSON), qui reprennent les mêmes concepts pour plus de légèreté et compatibilité web.
 
