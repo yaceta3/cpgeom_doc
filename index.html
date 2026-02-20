@@ -31,7 +31,7 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem active">
-                                <a href="." class="nav-link">Site de docuementation</a>
+                                <a href="." class="nav-link">Site de documentation</a>
                             </li>
                             <li class="navitem">
                                 <a href="sources/" class="nav-link">Sources</a>
@@ -81,13 +81,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#site-de-docuementation" class="nav-link">Site de docuementation</a>
+            <li class="nav-item" data-level="1"><a href="#site-de-documentation" class="nav-link">Site de documentation</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#general-theme" class="nav-link">General Theme</a>
+            <li class="nav-item" data-level="2"><a href="#sommaire" class="nav-link">Sommaire</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#1-definition" class="nav-link">1. Définition</a>
+            <li class="nav-item" data-level="2"><a href="#definition" class="nav-link">Définition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sources-internes" class="nav-link">Sources internes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sources-externes" class="nav-link">Sources externes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -98,32 +106,76 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="site-de-docuementation">Site de docuementation</h1>
-<p><img alt="alt text" src="img/welcome.jpg" /></p>
-<h2 id="general-theme">General Theme</h2>
-<p>! <a href="https://supports.idgeo.fr/cpgeom/2025-2027/A2_Sources_donnees/co/THEOSIG_geoplateforme.html">source de données</a></p>
-<h2 id="1-definition">1. Définition</h2>
-<p>Une source de données est l’origine d’une information exploitable dans un système d’information.
-Elle peut être interne ou externe, structurée ou non structurée, statique ou temps réel.</p>
-<p>Objectif : garantir fiabilité, traçabilité, fraîcheur et exploitabilité.</p>
-<p># Les sources de données de la DDT 65
- Dans la DDT 65 et principalement dans mes missions, j'utilise des référentiels et des sources de données. 
- En ce qui concerne les référentiels, on a : </p>
-<pre><code>- référentiel parcellaire interne
-- référentiel géographique basé sur la BD TOPO
-- Géoplateforme
-</code></pre>
-<p><img alt="alt text" src="img/geoplateforme.jpg" /></p>
-<p>Et pour les sources externes :</p>
-<pre><code>- Institutions statistiques (ex. INSEE)
-</code></pre>
-<p><img alt="alt text" src="img/insee.png" /></p>
-<pre><code>- Urbansimul (données foncières)
-</code></pre>
-<p><img alt="alt text" src="img/urbansimul.png" /></p>
-<pre><code>- Données géospatiales (OSM)
-</code></pre>
-<p><img alt="alt text" src="img/osm.png" /></p></div>
+<h1 id="site-de-documentation">Site de documentation</h1>
+<p><img alt="Bienvenue" src="img/welcome.jpg" /></p>
+<hr />
+<h2 id="sommaire">Sommaire</h2>
+<ul>
+<li><a href="#definition">Définition</a></li>
+<li><a href="#sources-internes">Sources internes</a></li>
+<li><a href="#referentiel-parcellaire-interne">Référentiel parcellaire interne</a></li>
+<li><a href="#referentiel-bd-topo">Référentiel BD TOPO</a></li>
+<li><a href="#geoplateforme">Géoplateforme</a></li>
+<li><a href="#sources-externes">Sources externes</a></li>
+<li><a href="#insee">INSEE</a></li>
+<li><a href="#urbansimul">Urbansimul</a></li>
+<li><a href="#osm">OpenStreetMap (OSM)</a></li>
+<li><a href="#recommandations">Recommandations</a></li>
+</ul>
+<hr />
+<h2 id="definition">Définition</h2>
+<p>Une <strong>source de données</strong> est l’origine d’une information exploitable dans un système d’information.<br />
+Elle peut être <strong>interne ou externe</strong>, <strong>structurée ou non structurée</strong>, <strong>statique ou temps réel</strong>.  </p>
+<p><strong>Objectif</strong> : garantir <strong>fiabilité</strong>, <strong>traçabilité</strong>, <strong>fraîcheur</strong> et <strong>exploitabilité</strong>.</p>
+<hr />
+<h2 id="sources-internes">Sources internes</h2>
+<p>Dans la DDT, les sources internes sont principalement des <strong>référentiels</strong> utilisés dans les missions quotidiennes.  </p>
+<h3 id="referentiel-parcellaire-interne">Référentiel parcellaire interne</h3>
+<ul>
+<li><strong>Type</strong> : vectoriel (polygones parcelles)  </li>
+<li><strong>Format</strong> : Shapefile, GeoJSON  </li>
+<li><strong>Mise à jour</strong> : mensuelle  </li>
+<li><strong>Licence / Usage</strong> : interne DDT uniquement  </li>
+<li><strong>Exemple d’usage</strong> : analyse foncière et attribution de parcelles à des projets.</li>
+</ul>
+<h3 id="referentiel-bd-topo">Référentiel BD TOPO</h3>
+<ul>
+<li><strong>Type</strong> : vectoriel (routes, bâtiments, hydrographie…)  </li>
+<li><strong>Format</strong> : Shapefile, GPKG  </li>
+<li><strong>Mise à jour</strong> : trimestrielle  </li>
+<li><strong>Licence / Usage</strong> : usage officiel pour SIG  </li>
+<li><strong>Exemple d’usage</strong> : cartographie et planification territoriale.</li>
+</ul>
+<h3 id="geoplateforme">Géoplateforme</h3>
+<p><img alt="Géoplateforme" src="img/geoplateforme.jpg" /><br />
+- <strong>Type</strong> : multi-données SIG<br />
+- <strong>Format</strong> : WMS, WFS, GeoJSON<br />
+- <strong>Accès</strong> : <a href="https://www.ign.fr/geoplateforme">Lien Géoplateforme</a><br />
+- <strong>Usage</strong> : intégration centralisée des données internes et externes<br />
+- <strong>Exemple d’usage</strong> : extraction rapide de données par zone d’intérêt.</p>
+<hr />
+<h2 id="sources-externes">Sources externes</h2>
+<p>Les sources externes viennent d’institutions ou plateformes publiques/privées.  </p>
+<h3 id="insee">INSEE</h3>
+<p><img alt="INSEE" src="img/insee.png" /><br />
+- <strong>Type</strong> : tabulaire/statistique<br />
+- <strong>Format</strong> : CSV, XLS<br />
+- <strong>Mise à jour</strong> : annuelle ou trimestrielle selon l’indicateur<br />
+- <strong>Licence / Usage</strong> : ouverte (Open Data)<br />
+- <strong>Exemple d’usage</strong> : indicateurs démographiques et socio-économiques.</p>
+<h3 id="urbansimul">Urbansimul</h3>
+<p><img alt="Urbansimul" src="img/urbansimul.png" /><br />
+- <strong>Type</strong> : foncier, simulation urbaine<br />
+- <strong>Format</strong> : CSV, API interne<br />
+- <strong>Licence / Usage</strong> : usage interne pour simulation de projets urbains<br />
+- <strong>Exemple d’usage</strong> : analyse d’impact foncier et urbanistique.</p>
+<h3 id="openstreetmap-osm">OpenStreetMap (OSM)</h3>
+<p><img alt="OSM" src="img/osm.png" /><br />
+- <strong>Type</strong> : vectoriel (points, lignes, polygones)<br />
+- <strong>Format</strong> : .osm, GeoJSON<br />
+- <strong>Mise à jour</strong> : continue, contribution collaborative<br />
+- <strong>Licence / Usage</strong> : ODbL<br />
+- <strong>Exemple d’usage</strong> : cartographie libre, réseau routier, points d’intérêt.</p></div>
             </div>
         </div>
 
@@ -206,5 +258,5 @@ Elle peut être interne ou externe, structurée ou non structurée, statique ou 
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2026-02-20 09:31:43.944442+00:00
+Build Date UTC : 2026-02-20 09:52:21.559277+00:00
 -->
